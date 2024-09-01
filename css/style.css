@@ -16,6 +16,85 @@ body {
   box-sizing: border-box;
 }
 
+body {
+  margin:0;
+  padding: 0;
+  background: linear-gradient( #F9FAFB 0%, #D2D6DB 100%);
+}
+
+article {
+  width: 340px;
+  margin: auto;
+  margin-top: 120px;
+  background-color: #FFFFFF;
+  font-weight: 500;
+}
+
+.card {
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 10%) 0px 1px 3px 0px;
+
+}
+
+.card img {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 16px;
+  gap: 12px;
+}
+
+.card__header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.badge {
+  font-size: 14px;
+  padding: 2px 8px;
+  background-color: #F0FDF4;
+  color: #15803D;
+  border-radius: 10px;
+  border: 1px solid #BBF7D0;
+  line-height: 1.25;
+  box-shadow: rgba(0, 0, 0, 25%) 0px 4px 4px 0px;
+  /* margin-bottom: 8px; */
+}
+
+.heading {
+  font-size: 18px;
+  font-weight: 600;
+  color: #171717;
+  line-height: 28px;
+}
+
+.description {
+  color: #525252;
+}
+
+.card__body {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.link { 
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  color: #4338CA;
+} 
+
+.link span {
+  font-size: 16px;
+  padding: 0 2px;
+}
+
 .credits {
   color: #777;
   position: fixed;
