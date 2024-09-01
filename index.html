@@ -1,57 +1,47 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<!-- [Delete this comment] This file is the main file for the challenge. For the most part, you should be editing this file. -->
 
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>GreatFrontEnd Projects</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet" />
+  <title>Blog Card | GreatFrontEnd Projects</title>
   <link rel="stylesheet" href="css/style.css" />
-
-  <!-- Tailwind CDN allows you to use Tailwind classes immediately in your HTML without any installation steps. 
-      If you're not using Tailwind, you may delete the <script> -->
-  <!-- Get started on Tailwind: https://tailwindcss.com/docs/installation/play-cdn -->
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <link rel="icon" href="img/favicon.ico" sizes="any" />
-  <style>
-    /* You may write styles inside this <style> tag or within `css/style.css`. */
-  </style>
 </head>
 
 <body>
-  <article class="card">
-    <header>
-      <img src="./img/spacejoy-YqFz7UMm8qE-unsplash.jpg" alt="living room with brown wooden table and chairs">
-    </header>
-    <section class="content">
-      <div class="card__header">
-        <p>
-          <span class="badge">Interior</span>
-        </p>
-        <h2 class="heading">Top 5 Living Room Inspirations</h2>
+  <div class="container">
+    <div class="blog__card">
+      <img
+        src="https://vaqybtnqyonvlwtskzmv.supabase.co/storage/v1/object/public/projects-images/blog-card/starter/img/blog-article-image.jpg"
+        alt="Blog card image" class="blog__card__image" />
+      <div class="blog__card__content">
+        <span class="badge badge--success blog__card__content__badge">
+          Interior
+        </span>
+        <div class="blog__card__content__info">
+          <div class="blog__card__content__info__title-desc">
+            <div class="blog__card__content__info__title">
+              Top 5 Living Room Inspirations
+            </div>
+            <p>
+              Curated vibrants colors for your living, make it pop & calm in
+              the same time.
+            </p>
+          </div>
+          <button class="blog__card__content__info__btn">
+            <span class="blog__card__content__info__btn__text">
+              Read more
+            </span>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M13.4763 9.16658L9.00633 4.69657L10.1848 3.51807L16.6667 9.99992L10.1848 16.4817L9.00633 15.3032L13.4763 10.8332H3.33333V9.16658H13.4763Z"
+                fill="currentColor" />
+            </svg>
+          </button>
+        </div>
       </div>
-      <div class="card__body">
-        <p class="description">Curated vibrants colors for your living, make it pop & calm in the same time.</p>
-        <button class="link">
-          <span>Read More</span>
-          <span>
-            <img src="./img/arrow-right-line.svg" alt="arrow right" />
-          </span>
-        </button>
-      </div>
-    </section>
-  </article>
-  <div class="credits" data-gfe-screenshot-exclude="true">
-    A challenge by
-    <a href="https://www.greatfrontend.com/projects?ref=challenges" target="_blank">GreatFrontEnd Projects</a>. Built by
-    <a href="https://www.greatfrontend.com/projects/u/username" target="_blank">LazyCoderRay</a>.
+    </div>
   </div>
-  <script src="js/index.js"></script>
 </body>
 
 </html>
